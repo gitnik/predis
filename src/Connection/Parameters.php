@@ -155,7 +155,7 @@ class Parameters implements ParametersInterface
      */
     public function __isset($parameter)
     {
-        return isset($this->parameters[$parameter]);
+        return isset($this->parameters[$parameter]) || isset($this->parameters['parameters'][$parameter]);
     }
 
     /**
